@@ -21,13 +21,13 @@ int check_sum(const string& str) {
 
 		cout << "cur char to int is " << char_to_int << endl;
 
-		if (char_to_int % 2 == 0)
+		if (i % 2 == 0)
 		{
-			sum_total += char_to_int * 2;
+			sum_total += char_to_int;
 		} 
 		else 
 		{
-			sum_total += char_to_int;
+			sum_total += char_to_int * 2;
 		}
 	}
 
