@@ -17,17 +17,17 @@ int check_sum(const string& str) {
 	{
 		cout << "cur character is " << str.at(i) << endl;
 
-		int char_to_int = static_cast<int>(str.at(i));
+		int char_to_int = str.at(i) - 48;
 
 		cout << "cur char to int is " << char_to_int << endl;
 
-		if (str.at(i) % 2 == 0)
+		if (char_to_int % 2 == 0)
 		{
-			sum_total += str.at(i) * 2;
+			sum_total += char_to_int * 2;
 		} 
 		else 
 		{
-			sum_total += str.at(i);
+			sum_total += char_to_int;
 		}
 	}
 
